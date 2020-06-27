@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Failure Screenshot is Captured and saved]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="100898" started-at="2020-06-13T16:47:46Z" finished-at="2020-06-13T16:49:27Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="100898" started-at="2020-06-13T16:47:46Z" finished-at="2020-06-13T16:49:27Z">
+      <class name="InvokingMethods.InvokingMethodsForValidLogin">
+        <test-method status="PASS" signature="CheckInDateIsLarger()[pri:0, instance:InvokingMethods.InvokingMethodsForValidLogin@51c8530f]" name="CheckInDateIsLarger" duration-ms="432" started-at="2020-06-13T16:47:46Z" finished-at="2020-06-13T16:47:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckInDateIsLarger -->
+        <test-method status="PASS" signature="InvalidDate()[pri:0, instance:InvokingMethods.InvokingMethodsForValidLogin@51c8530f]" name="InvalidDate" duration-ms="31" started-at="2020-06-13T16:47:47Z" finished-at="2020-06-13T16:47:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidDate -->
+        <test-method status="FAIL" signature="ValidCase()[pri:0, instance:InvokingMethods.InvokingMethodsForValidLogin@51c8530f]" name="ValidCase" duration-ms="95805" started-at="2020-06-13T16:47:47Z" finished-at="2020-06-13T16:49:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[14]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]"}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-NE7DH0T6', ip: '192.168.17.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\APOORV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57697}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9180c1e03b4b29a40f0b11b4041de683
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[14]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[14]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]"}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-NE7DH0T6', ip: '192.168.17.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\APOORV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57697}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9180c1e03b4b29a40f0b11b4041de683
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[14]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]}
+at org.testng.Assert.fail(Assert.java:96)
+at ExtentReports.ReportMethods.reportFail(ReportMethods.java:17)
+at SearchHolidayHomes.Criteria.CheckInDate(Criteria.java:35)
+at InvokingMethods.InvokingMethodsForValidLogin.ValidCase(InvokingMethodsForValidLogin.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Failure Screenshot is Captured and saved]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidCase -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:InvokingMethods.InvokingMethodsForValidLogin@51c8530f]" name="closebrowser" is-config="true" duration-ms="4614" started-at="2020-06-13T16:49:23Z" finished-at="2020-06-13T16:49:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- InvokingMethods.InvokingMethodsForValidLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
